@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Noughts_and_Crosses</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\8bit theme.wav" />
+    <None Remove="Resources\cross.png" />
+    <None Remove="Resources\Faces\Blundell.jpg" />
+    <None Remove="Resources\Faces\Fatyga.jpg" />
+    <None Remove="Resources\Faces\George.jpg" />
+    <None Remove="Resources\Faces\Graham.jpg" />
+    <None Remove="Resources\Faces\Jenkins.jpg" />
+    <None Remove="Resources\Faces\O%27Brien.jpg" />
+    <None Remove="Resources\Faces\Oxenham.jpg" />
+    <None Remove="Resources\Faces\Piper.jpg" />
+    <None Remove="Resources\Faces\Read.jpg" />
+    <None Remove="Resources\Faces\Reid.jpg" />
+    <None Remove="Resources\Faces\Saha.jpg" />
+    <None Remove="Resources\Faces\Sheridan.jpg" />
+    <None Remove="Resources\Faces\Smith.jpg" />
+    <None Remove="Resources\Faces\Yu.jpg" />
+    <None Remove="Resources\Grid.png" />
+    <None Remove="Resources\Mandelbrot.png" />
+    <None Remove="Resources\Nought.png" />
+    <None Remove="Resources\orchesta theme.wav" />
+    <None Remove="Resources\organ theme.wav" />
+    <None Remove="Resources\Snowflake.png" />
+    <None Remove="Resources\Square.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="5.7.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\8bit theme.wav" />
+    <Resource Include="Resources\Faces\Blundell.jpg" />
+    <Resource Include="Resources\Faces\Fatyga.jpg" />
+    <Resource Include="Resources\Faces\George.jpg" />
+    <Resource Include="Resources\Faces\Graham.jpg" />
+    <Resource Include="Resources\Faces\Jenkins.jpg" />
+    <Resource Include="Resources\Faces\O'Brien.jpg" />
+    <Resource Include="Resources\Faces\Oxenham.jpg" />
+    <Resource Include="Resources\Faces\Piper.jpg" />
+    <Resource Include="Resources\Faces\Read.jpg" />
+    <Resource Include="Resources\Faces\Reid.jpg" />
+    <Resource Include="Resources\Faces\Saha.jpg" />
+    <Resource Include="Resources\Faces\Sheridan.jpg" />
+    <Resource Include="Resources\Faces\Smith.jpg" />
+    <Resource Include="Resources\Faces\Yu.jpg" />
+    <Resource Include="Resources\Grid.png" />
+    <Resource Include="Resources\Mandelbrot.png" />
+    <Resource Include="Resources\orchesta theme.wav" />
+    <Resource Include="Resources\organ theme.wav" />
+    <Resource Include="Resources\Snowflake.png" />
+    <Resource Include="Resources\Square.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
