@@ -24,7 +24,10 @@ namespace Noughts_and_Crosses
         public static ObservableCollection<string> Source { get; set; } = new(new List<string>()
             {
                 "Disc",
+                "Beale",
                 "Blundell",
+                "Cole",
+                "Crilly",
                 "Fatyga",
                 "George",
                 "Graham",

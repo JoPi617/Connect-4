@@ -1,5 +1,3 @@
-﻿Full check on turn
-Mystery mode
-AI (other proj)
+﻿Show thinking
 Tab order
 Comment

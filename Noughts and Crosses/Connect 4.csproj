@@ -11,7 +11,10 @@
   <ItemGroup>
     <None Remove="Resources\8bit theme.wav" />
     <None Remove="Resources\cross.png" />
+    <None Remove="Resources\Faces\Beale.jpg" />
     <None Remove="Resources\Faces\Blundell.jpg" />
+    <None Remove="Resources\Faces\Cole.jpg" />
+    <None Remove="Resources\Faces\Crilly.jpg" />
     <None Remove="Resources\Faces\Fatyga.jpg" />
     <None Remove="Resources\Faces\George.jpg" />
     <None Remove="Resources\Faces\Graham.jpg" />
@@ -43,7 +46,10 @@
 
   <ItemGroup>
     <Resource Include="Resources\8bit theme.wav" />
+    <Resource Include="Resources\Faces\Beale.jpg" />
     <Resource Include="Resources\Faces\Blundell.jpg" />
+    <Resource Include="Resources\Faces\Cole.jpg" />
+    <Resource Include="Resources\Faces\Crilly.jpg" />
     <Resource Include="Resources\Faces\Fatyga.jpg" />
     <Resource Include="Resources\Faces\George.jpg" />
     <Resource Include="Resources\Faces\Graham.jpg" />

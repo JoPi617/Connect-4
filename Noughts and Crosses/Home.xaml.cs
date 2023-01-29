@@ -98,13 +98,10 @@ public partial class Page1 : Window
 
         Visibility = Visibility.Collapsed;
         var isComp = tckComp.IsChecked != null && (bool)tckComp.IsChecked; //Bypass nullable warning
-        if (isComp && (height > 3 || width > 3)) //Warn for slow AI
-            MessageBox.Show("Warning: computer player may be slow on larger grids", "Warning",
-                MessageBoxButton.OK, MessageBoxImage.Warning);
         var frm1 = new MainWindow(height, width, win, //Open new window
             p1 , p2, clrP1.Colour, clrP2.Colour,
             txtP1Name.Text, txtP2Name.Text, isComp, time,
-            modes[mode], Background, musics[music]);
+            modes[mode], Background, musics[music], diff);
         frm1.Home = this;
         frm1.Show();
     }
@@ -147,6 +144,7 @@ public partial class Page1 : Window
     public int height = 3;
     public int win = 3;
     public int time = 5;
+    public int diff = 5;
 
     private int music;
 
@@ -279,7 +277,13 @@ public partial class Page1 : Window
     {
         new ImageBrush(),
         new ImageBrush(new BitmapImage(
+            new Uri( @"pack://application:,,,/Resources/Faces/Beale.jpg"))),
+        new ImageBrush(new BitmapImage(
             new Uri( @"pack://application:,,,/Resources/Faces/Blundell.jpg"))),
+        new ImageBrush(new BitmapImage(
+            new Uri( @"pack://application:,,,/Resources/Faces/Cole.jpg"))),
+        new ImageBrush(new BitmapImage(
+            new Uri( @"pack://application:,,,/Resources/Faces/Crilly.jpg"))),
         new ImageBrush( new BitmapImage(
             new Uri( @"pack://application:,,,/Resources/Faces/Fatyga.jpg"))),
         new ImageBrush(new BitmapImage(

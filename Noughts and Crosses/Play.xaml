@@ -8,7 +8,7 @@
         Title="MainWindow" Height="600" Width="600" SizeChanged="Window_SizeChanged"
         WindowStartupLocation="CenterScreen" Closing="Window_Closing"
         Background="DarkSlateGray">
-    <Grid x:Name="Grid">
+    <Grid x:Name="Grid" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2.5*" />
             <ColumnDefinition Width="2.5*" />

@@ -41,6 +41,7 @@ public partial class Config : Window
         Home.Music = drpMusic.SelectedIndex;
         Home.Back = drpBack.SelectedIndex;
         Home.Visibility = Visibility.Visible;
+        Home.diff = ToInt32(sldDiff.Value);
     }
     /// <summary>
     /// Set current things to home
@@ -55,5 +56,6 @@ public partial class Config : Window
         drpMusic.SelectedIndex = Home.Music;
         drpBack.SelectedIndex = Home.Back;
         Background = Home.Background;
+        sldDiff.Value = Home.diff;
     }
 }
